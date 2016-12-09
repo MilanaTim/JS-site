@@ -1,0 +1,81 @@
+body {
+	font-size: 16px;
+	font-family: 'Droid Serif', serif;
+	color: #333333;
+}
+/** HEADER **/
+#header-nav {
+	background-color: #85ADA7;
+	border-radius: 0;
+	border-bottom: 1px solid #405a65;
+}
+.navbar-default {
+    border: none;
+}
+.navbar-header {
+	padding-left: 20px;
+}
+a.navbar-brand h1 { /* Company name*/
+	color: #405a65;
+	font-size: 2em;
+	padding: 10px 0;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #B8E0DA;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .6;
+}
+a.navbar-brand {
+	height: 70px;
+}
+.navbar-header a:hover, .navbar-header a:focus {
+	text-decoration: none; 
+}
+#nav-list li a {
+	font-size: 1.2em;
+	color: #fff;
+	padding: 10px;
+	margin-top: 15px;
+} 
+#nav-list a:hover {
+	color: #405a65;
+	border-radius: 20px;
+	background-color: #fff;
+}
+.navbar-toggle {
+	clear: both;
+	margin-top: -50px;
+	margin-right: 35px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #405a65;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #405a65;
+}
+.navbar-header button.navbar-toggle:hover, .navbar-header button.navbar-toggle:hover > .icon-bar,
+.navbar-header button.navbar-toggle:focus, .navbar-header button.navbar-toggle:focus > .icon-bar {
+    border: 1px solid #fff;
+    background-color: #85ADA7;
+}
+/** END HEADER **/
+@media (max-width: 767px) {
+	#nav-list {
+		margin: 0 -15px;
+	}
+	#nav-list a:hover, #nav-list a:focus {
+		border-radius: 0;
+		background-color: #fff;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border: none;
+	    background-color: #B8E0DA
+	}
+	#nav-list li {
+		border-top: 1px solid #293D3A;
+		text-align: center;
+	}
+	#nav-list li a {
+		margin-top: 0;
+	} 
+}
