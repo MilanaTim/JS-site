@@ -4,17 +4,27 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JavaScript Study</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+	<script>
+		function myFunction() {
+			document.getElementById("demo_6").style.display = "block";
+		}
+		function myFunction2() {
+			document.getElementById("demo_6").style.display = "none";
+		}
+	</script>
+	<title>Page_2</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+
 </head>
-<body>
-  <header>
+<body id="second_page">
+	<header>
     <nav id="header-nav" class="navbar navbar-default">
 
       <div class="container">
-
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html"><h1>JavaScript</h1></a>
         
@@ -29,16 +39,16 @@
         <div id="collapsable-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li>
-              <a href="index.html" class="this">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="index2.html">Page_2</a>
+              <a href="index2.html" class="this">Page_2</a>
             </li>            
             <li>
               <a href="index3.html">Page_3</a>
             </li>            
             <li>
-              <a href="index.html">Page_4</a>
+              <a href="index4.html">Page_4</a>
             </li>            
           </ul><!--#nav-lift -->
         </div><!-- .collapse .navbar-collapse -->
@@ -47,31 +57,14 @@
   </header>
 
   <div id="main-content" class="container">
-
-    <div class="col-xs-12">
-      <h2>JavaScript can change HTML content</h2>
-      <p id="demo">My first experience by JavaScript</p>
-      <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hi World'">I'm fine</button>
-
-      <h2>JavaScript can change HTML attribute</h2>
-      <button onclick="document.getElementById('demo_color').style='color:green'">Green Click</button>
-      <p id="demo_color" style="color: red">My first experience by JavaScript</p>
-      <button type="button" onclick="document.getElementById('demo_color').style='color:blue'">Blue Click</button>
-
-      <h2>JavaScript can change style of an HTML element</h2>
-      <p id="demo_3">My first experience by JavaScript</p>
-      <button type="button" onclick="document.getElementById('demo_3').style.textDecoration='underline'">Underline</button>
-
-      <h2>JavaScript can hide HTML elements</h2>
-      <p id="demo_4">My first experience by JavaScript</p>
-      <button type="button" onclick="document.getElementById('demo_4').style.display='none'">Hide button</button>
-
-      <h2>JavaScript can show HTML elements</h2>
-      <p id="demo_5" style="display: none">My first experience by JavaScript</p>
-      <button type="button" onclick="document.getElementById('demo_5').style.display='block'">Show button</button>
-    </div>
-  </div>
-
+		<div class="col-xs-12" id="two_buttons">
+			<h2>JavaScript in the &lt;head&gt; section of an HTML document</h2>
+			<p id="demo_6">JS in the &lt;head&gt;.</p>
+			<button class="number_one" type="button" onclick="myFunction()">Click to see</button>
+			<button class="number_two" type="button" onclick="myFunction2()">Click to hide</button>
+		</div>	
+	</div>
+	
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
