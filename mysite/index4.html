@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Page_3</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>JavaScript Study</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 </head>
-<body id="third_page">
+<body>
   <header>
     <nav id="header-nav" class="navbar navbar-default">
 
@@ -35,35 +35,28 @@
               <a href="index2.html">Page_2</a>
             </li>            
             <li>
-              <a href="index3.html" class="this">Page_3</a>
+              <a href="index3.html">Page_3</a>
             </li>            
             <li>
-              <a href="index4.html">Page_4</a>
+              <a href="index.html" class="this">Page_4</a>
             </li>            
           </ul><!--#nav-lift -->
         </div><!-- .collapse .navbar-collapse -->
       </div><!-- .container -->
     </nav><!-- #header-nav -->
   </header>
-  <div id="main-content" class="container">
-		<div class="col-xs-12" id="two_buttons">
-			<h2>JavaScript in the &lt;body&gt; section of an HTML document</h2>
 
-			<div class="photo_tile">
-				<img id="myImg" src="images/1_273_200.jpg" width="273" height="200" alt="caterpillar_butterfly">
-			</div>
-			<button class="number_one" type="button" onclick="myFunction()">butterfly</button>
-			<button class="number_two" type="button" onclick="myFunction2()">caterpillar</button>
-		</div>	
-	</div>
-	<script>
-		function myFunction() {
-			document.getElementById("myImg").src = "images/2_273_200.jpg";
-		}
-		function myFunction2() {
-			document.getElementById("myImg").src = "images/1_273_200.jpg";
-		}
-	</script>
+  <div id="main-content" class="container">
+
+    <div class="col-xs-12">
+      <p id="hidden"></p>
+      <button type="button" onclick="myFunction()">Click</button>
+      <button type="button" onclick="window.alert(5 + 7)">window.alert</button>
+
+    </div>
+    <script src="js/customScript.js"></script>
+
+  </div>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
